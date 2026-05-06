@@ -1,0 +1,78 @@
+#header1{
+    text-align:center ;
+    font-size: 200%;
+    padding: 90px;
+    color:rgb(209, 212, 212);
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+   font-weight: bold;
+   
+
+}
+
+.boxes-container{
+    justify-content:center;
+    align-items:center;
+     display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.feeling{
+
+     width: 200px;
+    height: 100px;
+    padding:5px;
+    float:left;
+    margin:20px;
+    background-color: hsl(278, 84%, 35%);
+    border-color: hsl(278, 84%, 35%);
+    border-radius: 10%;
+    box-shadow: 
+    0 0 5px #470a79,            /* White core for brightness */
+    0 0 15px #360d46,        /* Inner purple glow */
+    0 0 30px #100116;        /* Large outer purple spread */
+    color:#fff;
+     font-size: 150%;
+     font-style: oblique;
+     font-family:"Lucida Console", "Monaco", monospace;
+     animation-name: feelings;
+     animation-duration: 2s;
+    }
+
+@keyframes feelings{
+    50% {transform: scale(0.5,0.5)}
+
+}
+
+body{
+
+    background:  linear-gradient(180deg, #4b0082, #9370db);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 10vh;            
+    margin: 0;
+   
+}
+
+
+
+.sk{
+    width: 250px;
+    height: 250px;
+    animation-name: slideleft1;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+       animation-direction: normal;
+       animation-play-state: running;
+       animation-timing-function: steps(10);
+  
+       
+}
+@keyframes slideleft1{
+  from{transform: translateX(300%)}
+}
+
+
+
+
